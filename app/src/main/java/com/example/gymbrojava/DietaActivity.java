@@ -28,17 +28,20 @@ public class DietaActivity extends AppCompatActivity {
     public void openClasesActivity(View view) {
         Intent intent = new Intent(this, ClasesActivity.class);
         startActivity(intent);
+        finish();
     }
 
     // Método para abrir la actividad de Rutina
     public void openRutinaActivity(View view) {
         Intent intent = new Intent(this, RutinaActivity.class);
         startActivity(intent);
+        finish();
     }
 
     // Método para abrir la actividad de Dieta
     public void openDietaActivity(View view) {
         Intent intent = new Intent(this, DietaActivity.class);
         startActivity(intent);
+        finish();
     }
 }

@@ -96,11 +96,18 @@ public class LoginActivity extends AppCompatActivity {
             String password = passwordEditText.getText().toString();
 
             if (username.equals("admin") && password.equals("1234")) {
+                Intent intent = new Intent(LoginActivity.this, PantallaInicioActivity.class);
+                startActivity(intent);
+                finish();
+                dialog.dismiss(); // Cerramos el diálogo
+            }
+            else if (username.equals("user") && password.equals("1234")) {
                 Intent intent = new Intent(LoginActivity.this, ClasesActivity.class);
                 startActivity(intent);
                 finish();
                 dialog.dismiss(); // Cerramos el diálogo
-            } else {
+            }
+            else {
                 Toast.makeText(getApplicationContext(), "Credenciales incorrectas", Toast.LENGTH_SHORT).show();
             }
         });

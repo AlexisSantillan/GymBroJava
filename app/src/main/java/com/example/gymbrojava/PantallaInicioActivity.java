@@ -23,23 +23,32 @@ public class PantallaInicioActivity extends AppCompatActivity {
         });
     }
 
-    // Método para abrir la actividad de Clases
-    public void openClasesActivity(View view) {
-        Intent intent = new Intent(this, ClasesActivity.class);
+    // Método para abrir la actividad de Agregar Clases
+    public void openAgregarClasesActivity(View view) {
+        Intent intent = new Intent(this, AgregarClasesActivity.class);
         startActivity(intent);
+        finish();
     }
 
-    // Método para abrir la actividad de Rutina
-    public void openRutinaActivity(View view) {
-        Intent intent = new Intent(this, RutinaActivity.class);
+    // Método para abrir la actividad de Agregar Rutina
+    public void openAgregarRutinaActivity(View view) {
+        Intent intent = new Intent(this, AgregarRutinaActivity.class);
         startActivity(intent);
+        finish();
     }
 
-    // Método para abrir la actividad de Dieta
-    public void openDietaActivity(View view) {
-        Intent intent = new Intent(this, DietaActivity.class);
+    // Método para abrir la actividad de Agregar Dieta
+    public void openAgregarDietaActivity(View view) {
+        Intent intent = new Intent(this, AgregarDietaActivity.class);
         startActivity(intent);
+        finish();
     }
 
+    // Método para abrir la actividad de Agregar Ususarios
+    public void openAgregarUsuariosActivity(View view) {
+        Intent intent = new Intent(this, AgregarUsuarioActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
 }
