@@ -8,34 +8,27 @@
     android:layout_height="match_parent"
     tools:context=".PantallaInicioActivity">
 
-  <!-- Botón de Clases -->
   <Button
       android:id="@+id/clasesButton"
-      android:layout_width="130dp"
+      android:layout_width="0dp"
       android:layout_height="60dp"
       android:backgroundTint="@color/black"
+      android:onClick="openClasesActivity"
       android:text="Clases"
       android:textColor="@color/white"
       android:textSize="15dp"
-      android:onClick="openClasesActivity"
       app:cornerRadius="0dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toStartOf="@+id/rutinaButton"
-      app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.998" />
-
-  <!-- Botón de Rutina -->
-
-  <!-- Botón de Dieta -->
-
-  <!-- Botón de Notificaciones con imagen -->
+      app:layout_constraintVertical_bias="0.998"
+      app:layout_constraintWidth_percent="0.33" />
 
   <Button
       android:id="@+id/rutinaButton"
-      android:layout_width="120dp"
-      android:layout_height="59dp"
+      android:layout_width="0dp"
+      android:layout_height="60dp"
       android:backgroundTint="@color/black"
       android:onClick="openRutinaActivity"
       android:text="Rutina"
@@ -43,13 +36,15 @@
       android:textSize="15dp"
       app:cornerRadius="0dp"
       app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/dietaButton"
+      app:layout_constraintStart_toEndOf="@+id/clasesButton"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.996"
-      tools:layout_editor_absoluteX="132dp" />
+      app:layout_constraintVertical_bias="0.998"
+      app:layout_constraintWidth_percent="0.33" />
 
   <Button
       android:id="@+id/dietaButton"
-      android:layout_width="130dp"
+      android:layout_width="0dp"
       android:layout_height="60dp"
       android:backgroundTint="@color/black"
       android:onClick="openDietaActivity"
@@ -59,21 +54,11 @@
       app:cornerRadius="0dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/rutinaButton"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.996" />
+      app:layout_constraintVertical_bias="0.998"
+      app:layout_constraintWidth_percent="0.33" />
 
-  <Button
-      android:id="@+id/notificacionesButton"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_margin="16dp"
-      android:backgroundTint="@color/black"
-      android:drawableStart="@drawable/ic_notificaciones"
-      android:tint="@color/white"
-      android:onClick="openNotificacionesActivity"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.0"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

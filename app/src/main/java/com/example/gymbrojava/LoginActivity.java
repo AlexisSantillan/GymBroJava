@@ -47,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
                 super.onAuthenticationSucceeded(result);
                 Toast.makeText(getApplicationContext(), "Autenticación exitosa!", Toast.LENGTH_SHORT).show();
                 // Redirigir a otra actividad si la autenticación es exitosa
-                Intent intent = new Intent(LoginActivity.this, PantallaInicioActivity.class);
+                Intent intent = new Intent(LoginActivity.this, ClasesActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -96,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
             String password = passwordEditText.getText().toString();
 
             if (username.equals("admin") && password.equals("1234")) {
-                Intent intent = new Intent(LoginActivity.this, PantallaInicioActivity.class);
+                Intent intent = new Intent(LoginActivity.this, ClasesActivity.class);
                 startActivity(intent);
                 finish();
                 dialog.dismiss(); // Cerramos el diálogo

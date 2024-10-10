@@ -1,6 +1,8 @@
 package com.example.gymbrojava;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,23 @@ public class ClasesActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    // Método para abrir la actividad de Clases
+    public void openClasesActivity(View view) {
+        Intent intent = new Intent(this, ClasesActivity.class);
+        startActivity(intent);
+    }
+
+    // Método para abrir la actividad de Rutina
+    public void openRutinaActivity(View view) {
+        Intent intent = new Intent(this, RutinaActivity.class);
+        startActivity(intent);
+    }
+
+    // Método para abrir la actividad de Dieta
+    public void openDietaActivity(View view) {
+        Intent intent = new Intent(this, DietaActivity.class);
+        startActivity(intent);
     }
 }
